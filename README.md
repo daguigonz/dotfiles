@@ -38,6 +38,6 @@ Don't use my configurations blindly unless you know what they entail! Use them a
 
 
 ## About me
-![dotfiles screenshot](https://raw.githubusercontent.com/daguigonz/resources/refs/heads/main/branding/AD.png?token=GHSAT0AAAAAADB43W6TFDWR3XKYT74M47SW2AGW4ZQ)
+![dotfiles screenshot](https://github.com/daguigonz/resources/raw/main/branding/AD.png)
 - [@daguigonz](https://x.com/daguigonz)
 - [Newsletters](https://aguirredaniels.com/)
