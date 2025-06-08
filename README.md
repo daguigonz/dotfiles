@@ -1,12 +1,14 @@
 # dotfiles
-Development programs configuration (iterm2, nvim, zellij) and custom UI (sketchybar, yabai), terminal IDE (iterm2, kitty), and others.
+Development programs configuration (iterm2, nvim, zellij) and custom UI (sketchybar, yabai), terminal IDE (iterm2 and ghostty), and others.
 Don't use my configurations blindly unless you know what they entail! Use them at your own risk!
-![dotfiles screenshot](./images/screenshot-2.png)
+#
+![dotfiles screenshot](./images/screenshot-1.png)
 
 ## Contents
 - .config/
     - zellij config
     - nvim (Neovim + lazyVim + custom)
+    - ghostty (new config)
     - sketchybar
 - starship config
 - aerospace config
@@ -19,22 +21,26 @@ Don't use my configurations blindly unless you know what they entail! Use them a
 - [Nerd fonts](https://github.com/ryanoasis/nerd-fonts) - Patched fonts for development-use. I use [PlemolJP](https://github.com/yuru7/PlemolJP) and BlexMono.
 - [ghq](https://github.com/x-motemen/ghq) - Local Git repository organizer
 - [fzf](https://github.com/PatrickF1/fzf.fish) - Interactive filtering
-- UI
-    - [sketchybar](https://github.com/FelixKratz/SketchyBar)
     - [AeroSpace](https://nikitabobko.github.io/AeroSpace/guide)
-    - [Eza](https://github.com/eza-community/eza) - `ls` replacement
-     - [yabai](URL_ADDRESS.com/koekeishiya/yabai)
+    - [sketchybar](https://github.com/FelixKratz/SketchyBar)
 - [NeoVim](https://neovim.io/) - >= **0.9.0** 
     - [LazyVim](https://www.lazyvim.org/)
-    - [oxocarbon](https://github.com/nyoom-engineering/oxocarbon.nvim)
+
+## Plugins
+- [yabai](https://github.com/koekeishiya/yabai)
+- [Oli](https://github.com/stevearc/oil.nvim)
+- [Alpha](https://github.com/goolord/alpha-nvim)
 - [lazygit](https://github.com/jesseduffield/lazygit) **_(optional)_**
 - for [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) **_(optional)_**
   - **live grep**: [ripgrep](https://github.com/BurntSushi/ripgrep)
   - **find files**: [fd](https://github.com/sharkdp/fd)
-- Terminal
-    - [Ghostty] (https://ghostty.org/)
+- [nvim-tree](https://github.com/nvim-tree)
+- [Comment](https://github.com/numToStr/Comment.nvim)
+- IA & Autocomplet (NEW)
+    - [Supermave](https://supermaven.com/)  **(Free model)**
+    - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
 
-![dotfiles screenshot](./images/screenshot-1.png)
+![dotfiles screenshot](./images/screenshot-2.png)
 
 
 ## About me

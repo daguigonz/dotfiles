@@ -1,0 +1,29 @@
+# Config font
+font-family = MonoLisa MonoLisaCustom
+font-family-italic = MonoLisa Scripty
+font-family-bold-italic = MonoLisa Scripty Bold
+
+font-size = 18
+macos-titlebar-style = hidden
+#windows
+shell-integration-features = sudo,no-title
+adjust-cell-height = 10%
+cursor-style = bar
+background = #161616
+
+# Add some nice looking paddingmouse-hide-while-typing = true
+window-colorspace = "display-p3"
+background-opacity = 0.95
+window-padding-x = 12
+window-padding-y = 12
+# window-decoration = true
+
+macos-icon = custom-style
+macos-icon-ghost-color = #161616
+macos-icon-screen-color = #161616
+
+macos-titlebar-style = hidden
+window-decoration = none
+# Merges title bar with contents
+# macos-titlebar-style = native
+# macos-titlebar-style = transparent
