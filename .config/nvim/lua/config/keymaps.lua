@@ -27,7 +27,7 @@ keymap.set("n", "-", "<C-x>")
 keymap.set("n", "dw", 'vb"_d')
 
 -- Select all
-keymap.set("n", "<C-a>", "gg<S-v>G")
+keymap.set("n", "A", "gg<S-v>G")
 
 -- Save with root permission (not working for now)
 --vim.api.nvim_create_user_command('W', 'w !sudo tee > /dev/null %', {})
@@ -43,9 +43,11 @@ keymap.set("n", "<C-m>", "<C-i>", opts)
 keymap.set("n", "te", ":tabedit")
 keymap.set("n", "<tab>", ":tabnext<Return>", opts)
 keymap.set("n", "<s-tab>", ":tabprev<Return>", opts)
+
 -- Split window
 keymap.set("n", "ss", ":split<Return>", opts)
 keymap.set("n", "sv", ":vsplit<Return>", opts)
+
 -- Move window
 keymap.set("n", "sh", "<C-w>h")
 keymap.set("n", "sk", "<C-w>k")
@@ -75,13 +77,13 @@ vim.api.nvim_create_user_command("ToggleAutoformat", function()
 	require("craftzdog.lsp").toggleAutoformat()
 end, {})
 
-
 ----------------------
 -- CUSTOM DAGUIGONZ --
 ----------------------
 
 -- File explorer with NvimTree
--- TODO : Fendiente configurar Tree derecha 
+
+-- TODO : Fendiente configurar Tree derecha
 keymap.set("n", "<Leader>f", ":NvimTreeToggle<CR>", opts)
 
 -- Oil (file explorer)
@@ -89,7 +91,6 @@ keymap.set("n", "<leader>o", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
 -- Select all
 keymap.set("n", "<C-a>", "gg<S-v>G")
-
 
 -- Buffer
 keymap.set("n", "<Tab>", ":bn<CR>", { noremap = true, silent = true })
@@ -100,3 +101,6 @@ keymap.set("n", "<Leader>w", ":update<Return>", opts)
 keymap.set("n", "<Leader>q", ":quit<Return>", opts)
 keymap.set("n", "<Leader>Q", ":qa<Return>", opts)
 
+keymap.set("v", "<leader>gm", function()
+	require("gemini").ask_gemini()
+end, { desc = "Enviar selección a Gemini" })
